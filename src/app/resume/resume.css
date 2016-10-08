@@ -1,0 +1,11 @@
+.content-container {
+	background-color : #fbfbfb;
+	padding : 30px;
+	font-family : helvetica;
+	text-align : center;
+	font-size : 24px;
+	text-transform : lowercase;
+}
+.line-item {
+	margin : 20px 20px;
+}

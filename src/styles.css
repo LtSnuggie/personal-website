@@ -1,0 +1,187 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	margin: 0;
+}
+
+footer {
+	text-align : right;
+/* 	width: 100%; */
+	padding : 20px;
+	padding-right : 40px;
+    border-top: #606060 solid 1px;
+    background-color: black;
+    color: white;
+    font-family: helvetica;
+}
+body {
+/* 	min-width: 450px; */
+}
+.button {
+	opacity: 1;
+	color: white;
+	padding: 10px;
+	border: 1px solid #37a8d2;
+	display: inline-block;
+    text-transform: uppercase;
+    font-family: helvetica;
+    cursor:pointer;
+    letter-spacing: .1em;
+	margin: 30px;
+	margin-left: 1vw;
+	float: right;
+	font-weight: 400;
+}
+.button:hover, .button.selected {
+	background-color: #37a8d2;
+/* 	color: #777777; */
+}
+.link {
+	opacity: 1;
+	color: #777777;
+	display: inline-block;
+    text-transform: uppercase;
+    font-family: helvetica;
+    cursor:pointer;
+    letter-spacing: .1em;
+	margin: 41px 1vw;
+	float: right;
+	font-weight: 400;
+	text-decoration: none;
+}
+.link.selected, .link.selected:hover{
+	color: white;
+}
+.link:hover{
+	color:#37a8d2;
+}
+.selected:hover {
+	cursor : default;
+}
+.highlight {
+	color: #37a8d2;
+	text-decoration : none;
+}
+.col-1 {
+	width : 8.333%;
+	float : left;
+}
+.col-1.mobile {
+	width : 100%;
+	clear : both;
+}
+.col-2 {
+	width : 16.667%;
+	float : left;
+}
+.col-3 {
+	width : 25%;
+	float : left;
+}
+.col-4 {
+	width : 33.333%;
+	float : left;
+}
+.col-4.mobile {
+	width : 100%;
+	clear : both;
+}
+.col-5 {
+	width : 41.667%;
+	float : left;
+}
+.col-5.mobile {
+	width : 100%;
+	clear : both;
+}
+.col-6 {
+	width : 50%;
+	float : left;
+}
+.col-7 {
+	width : 58.333%;
+	float : left;
+}
+.col-8 {
+	width : 66.667%;
+	float : left;
+}
+.col-9 {
+	width : 75%;
+	float : left;
+}
+.col-10 {
+	width : 83.333%;
+	float : left;
+}
+.col-11 {
+	width : 91.667%;
+	float : left;
+}
+.col-12 {
+	width : 100%;
+	float : left;
+}
+.row-80 {
+	padding-top : 80px;
+	clear: both;
+}
+.row-120 {
+	padding-top : 120px;
+	clear: both;
+}
+.heading{
+    font-family: "proxima-nova";
+    font-size: 34px;
+    line-height: 1.9em;
+}
+.body{
+    font-family: "proxima-nova";
+    font-size: 18px;
+    line-height: 1.8em;
+}
+.content-container {
+	padding: 80px 0 120px 0;
+	display: flex;
+	width: 100%;
+}
+.content-container.mobile {
+	padding: 0 0;
+	display: block;
+}
+.section-container.heading{ 
+	padding-bottom : 0px;
+}
+.section-container{ 
+	padding-bottom : 40px;
+}
+.section-container.mobile{
+	padding : 0 8.333%;
+}
+img.center {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.center {
+	text-align : center;
+}
+.right {
+	text-align : right;
+}
+.left {
+	text-align : left;
+}
+.icon-container {
+	color : #666;
+	color : #FFFFFF;
+}
+.icon-container:hover{
+	color : #FFFFFF;
+	color : #666;
+}
+.icon-row {	
+	padding : 5px;
+}
+.icon-row.fa:hover{
+	color : #37a8d2;
+}

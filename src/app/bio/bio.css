@@ -1,0 +1,18 @@
+/* .content-container:nth-of-type(3n+1)  { */
+/* 	background-color : #F7FBFC; */
+/* } */
+/* .content-container:nth-of-type(3n+2)  { */
+/* 	background-color : #E1ECF0; */
+/* } */
+.content-container {
+	color : #666;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 500;
+}
+.content-container:nth-of-type(3n+1)  {
+	background-color : #EDEDED;
+}
+.content-container:nth-of-type(3n+2)  {
+	background-color : #F7FBFC;
+}
