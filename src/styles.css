@@ -172,16 +172,20 @@ img.center {
 	text-align : left;
 }
 .icon-container {
-	color : #666;
+/* 	color : #666; */
 	color : #FFFFFF;
 }
 .icon-container:hover{
-	color : #FFFFFF;
 	color : #666;
 }
 .icon-row {	
 	padding : 5px;
 }
-.icon-row.fa:hover{
+.icon-row.fa {
+	color : #666; 
+}
+.icon-row.fa:hover, .icon-row.fa:focus{
 	color : #37a8d2;
+	cursor : pointer;
+    text-decoration: none;
 }
