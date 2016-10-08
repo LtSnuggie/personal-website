@@ -54,6 +54,9 @@ body {
 .link:hover{
 	color:#37a8d2;
 }
+.link:focus, .link:hover{
+	text-decoration : none;
+}
 .selected:hover {
 	cursor : default;
 }
