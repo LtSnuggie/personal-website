@@ -169,6 +169,9 @@
 	align-items: center;
 	wdith: 100%;
 }
+.flex-right {
+	margin-left: auto;
+}
 footer {
 	border-top: solid 1px #555;
 	height: 60px;

@@ -1,10 +1,11 @@
 <div class="header">
 	<div class="section-container">
+		<div class="link content-container  flex-right" style="z-index:-1" [routerLink]="['/home']" [routerLinkActive]="['selected']"></div>
 		<div class="link content-container fa fa-home fa-2x" [routerLink]="['/home']" [routerLinkActive]="['selected']"></div>
 		<div class="link content-container fa fa-info-circle fa-2x" [routerLink]="['/bio']" [routerLinkActive]="['selected']"></div>
-		<div class="link content-container fa fa-floppy-o fa-2x" [routerLink]="['/projects']" [routerLinkActive]="['selected']"></div>
+		<div class="link content-container fa fa-code fa-2x" [routerLink]="['/projects']" [routerLinkActive]="['selected']"></div>
 	<!-- 	<div class="link" [routerLink]="['/resume']" [routerLinkActive]="['selected']">resume</div> -->
-		<div class="link content-container fa fa-unlock-alt fa-2x" [routerLink]="['/login']" [routerLinkActive]="['selected']"></div>
+		<div class="link content-container fa fa-unlock-alt fa-2x flex-right" [routerLink]="['/login']" [routerLinkActive]="['selected']"></div>
 	<!-- 	<svg [routerLink]="['/home']"> -->
 	<!-- 		<rect width="50" height="50" style="fill:rgb(128,128,128)" x="25" y="25"/> -->
 	<!-- 		<circle [attr.r]="myRadius" cx="50" cy="50"></circle> -->
