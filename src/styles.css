@@ -165,7 +165,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	wdith: 100%;
+	width: 100%;
 }
 .flex-column {
 	flex-direction: column;
