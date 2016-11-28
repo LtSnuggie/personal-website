@@ -10,7 +10,7 @@ export class Projects {
     public content = ''
     projectList = ['{{ JSON Utility }}', 'test1', 'test2', 'test3']
     projectContent = {
-        '{{ JSON Utility }}' : 'A utility for easily visualizing, manipulating, and querying for JSON content the REST calls'
+        '{{ JSON Utility }}' : 'A utility for easily visualizing, manipulating, and querying for JSON content the REST calls',
         'test1' : 'This is just test content',
         'test2' : 'This is just test content',
         'test3' : 'This is just test content',
