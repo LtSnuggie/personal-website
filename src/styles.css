@@ -181,8 +181,8 @@ footer {
 	height: 60px;
 	background-color: #F0F0F0;
 	width: 100%;
-	position: fixed;
-	bottom: 0;
+/* 	position: fixed; */
+/* 	bottom: 0; */
 	
 }
 .heading{
@@ -202,9 +202,15 @@ a.link:hover, a.link:focus{
 	color: #df4244;
 	text-decoration: none;
 }
+.italic{
+	font-style: italic;
+}
 .footer-block.link.content-container {
 	width: 240px;
 	z-index: -1;
+}
+.route-wrapper {
+	min-height: calc(100vh - 180px);
 }
 .content-container.link{
 	justify-content: center;
