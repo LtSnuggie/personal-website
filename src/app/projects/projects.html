@@ -3,4 +3,5 @@
 		<div *ngFor="let project of projectList" class="project-icon section-container" (mouseover)='showContent(project)'>
 			<span *ngIf="highlighted !== project">{{project}}</span>
 			<span *ngIf="highlighted === project" class="project-content">{{content}}</span>
+		</div>
 </div>
