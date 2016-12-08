@@ -12,13 +12,13 @@
 .project-icon:hover{
 	background-color: #0087cb;
     transition: all 0.2s linear 0s;
-    font-size: 25px;
-    height: 330px;
-    width: 100vw;
-    margin: 0px -15px -15px -15px;
+/*     font-size: 25px; */
+    height: 320px;
+    width: calc(100vw - 10px);
+    margin: 5px -10px -10px -10px;
 }
 .project-icon:first-child:hover{
-	margin-top: -15px;
+	margin-top: -10px;
 }
 .project-icon:first-child{
 	margin-top: 0px;
@@ -31,4 +31,8 @@
 .project-content {
 	margin: 0 100px;
 	text-align: center;
+}
+a{
+    text-decoration: none;
+    color: red;
 }

@@ -1,7 +1,7 @@
 <div class="projects-container">
 <!-- 	<div class="section-container"> -->
-		<div *ngFor="let project of projectList" class="project-icon section-container" (mouseover)='showContent(project)'>
-			<span *ngIf="highlighted !== project">{{project}}</span>
-			<span *ngIf="highlighted === project" class="project-content">{{content}}</span>
-		</div>
+		<a *ngFor="let project of projectList" class="project-icon section-container" (mouseenter)='current = project' (mouseleave)='current = null' target="_blank" href="{{projectContent[project].href}}">
+			<span *ngIf="current !== project">{{project}}</span>
+			<span *ngIf="current === project" class="project-content">{{projectContent[project].description}}</span>
+		</a>
 </div>
