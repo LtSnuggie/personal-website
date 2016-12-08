@@ -170,15 +170,12 @@
 .flex-column {
 	flex-direction: column;
 }
-.flex-right {
-	margin-left: auto;
-}
 .flex-left {
 	margin-right: auto;
 }
 footer {
 	border-top: solid 1px #555;
-	height: 60px;
+/* 	height: 60px; */
 	background-color: #F0F0F0;
 	width: 100%;
 /* 	position: fixed; */
@@ -206,11 +203,10 @@ a.link:hover, a.link:focus{
 	font-style: italic;
 }
 .footer-block.link.content-container {
-	width: 240px;
 	z-index: -1;
 }
 .route-wrapper {
-	min-height: calc(100vh - 180px);
+	min-height: calc(100vh - 120px);
 }
 .content-container.link{
 	justify-content: center;
@@ -225,5 +221,38 @@ a.link:hover, a.link:focus{
 	footer{
 		position: relative;
 		bottom: initial;
+		flex-direction: column;
+	}
+	.footer-block.link.content-container {
+		width: 0;
+	}
+	.home-link {
+	    height: 60px;
+	    margin-left: auto;
+	    padding-top: 20px;
+	    text-align: center;
+	    width: 100%;
+	}
+	.footer {
+		height: 120px;	
+	}
+	img {
+		width: 95%;
+	}
+}
+@media all and (min-width: 800px) {
+	footer{
+		position: relative;
+		bottom: initial;
+		flex-direction: column;
+	}
+	.footer-block.link.content-container {
+		width: 240px;
+	}
+	.flex-right {
+		margin-left: auto;
+	}
+	.footer {
+		height: 60px;	
 	}
 }

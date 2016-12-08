@@ -18,3 +18,25 @@
 .link.selected {
 	background-color: #df4244;
 }
+.login {
+	margin-left: auto;
+}
+.menu-bars{
+	margin-right: auto;
+}
+@media all and (max-width: 800px) {	
+	.link.menu-bars {
+		visibility: visible;
+	}
+	.link.login {
+		visibility: visible;
+	}
+	.link {
+		visibility: hidden;
+	}
+}
+@media all and (min-width: 800px) {
+	.menu-bars {
+		visibility: hidden;
+	}
+}

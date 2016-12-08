@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 
 @Component({
@@ -7,6 +7,22 @@ import {Observable} from 'rxjs/Rx';
   templateUrl: './menu-header.html'
 })
 export class MenuHeader {
+        
+    @Output() result = new EventEmitter<boolean>();
+    
+    menuSelected = false;
+    menuClicked() {
+        this.menuSelected = !this.menuSelected;
+        this.result.emit(this.menuSelected);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     text = "Custom Text";
     seg = 1;
     x1 = 0;

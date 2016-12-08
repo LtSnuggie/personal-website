@@ -1,17 +1,22 @@
-<menu-header></menu-header>
-
-<div class="route-wrapper">
-	<router-outlet></router-outlet>
-</div>
-
-<!-- <div style="height: 60px"></div> -->
-<footer>
-	<div class="section-container icon-container">
-		<a class="footer-block content-container link"></a>
-		<a target="_blank" href="https://github.com/LtSnuggie" class="link fa fa-github fa-2x icon-row content-container flex-right" aria-hidden="true"></a>
-		<a target="_blank" href="https://www.linkedin.com/in/andrew-lintereur-4b25521a" class="link fa fa-linkedin fa-2x icon-row content-container" aria-hidden="true"></a>
-		<a target="_blank" href="https://www.facebook.com/andrew.lintereur" class="link fa fa-facebook fa-2x icon-row content-container" aria-hidden="true"></a>
-		<a target="_blank" href="https://www.instagram.com/lt.snuggie/" class="link fa fa-instagram fa-2x icon-row content-container" aria-hidden="true"></a>
-		<span class="home-link flex-right"><a href="/#/home" class="link" >andrew-lintereur</a>.com © 2016</span>
+<div class="wrapper" [ngClass]="{'out' : showMenu}">
+	<div class="slide-menu" [ngClass]="{'out' : showMenu}">
 	</div>
-</footer>
+	<div class="page-wrap">
+		<menu-header (result)="ngOnChange($event)"></menu-header>
+		
+		<div class="route-wrapper" [ngClass]="{'show-menu' : showMenu}">
+			<router-outlet></router-outlet>
+		</div>
+		<!-- <div style="height: 60px"></div> -->
+		<footer>
+			<div class="section-container icon-container">
+				<a class="footer-block content-container link"></a>
+				<a target="_blank" href="https://github.com/LtSnuggie" class="link fa fa-github fa-2x icon-row content-container flex-right" aria-hidden="true"></a>
+				<a target="_blank" href="https://www.linkedin.com/in/andrew-lintereur-4b25521a" class="link fa fa-linkedin fa-2x icon-row content-container" aria-hidden="true"></a>
+				<a target="_blank" href="https://www.facebook.com/andrew.lintereur" class="link fa fa-facebook fa-2x icon-row content-container" aria-hidden="true"></a>
+				<a target="_blank" href="https://www.instagram.com/lt.snuggie/" class="link fa fa-instagram fa-2x icon-row content-container" aria-hidden="true"></a>
+				<span class="home-link flex-right"><a href="/#/home" class="link" >andrew-lintereur</a>.com © 2016</span>
+			</div>
+		</footer>
+	</div>
+</div>
