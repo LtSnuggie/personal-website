@@ -1,22 +1,25 @@
-<div class="wrapper" [ngClass]="{'out' : showMenu}">
-	<div class="slide-menu" [ngClass]="{'out' : showMenu}">
+<div class="side-menu" [ngClass]="{'out' : showMenu}">
+	<div class="link side-menu" [routerLink]="['/home']" [routerLinkActive]="['selected']" (click)="showMenu = !showMenu">Home</div>
+	<div class="link side-menu" [routerLink]="['/bio']" [routerLinkActive]="['selected']" (click)="showMenu = !showMenu">Bio</div>
+	<div class="link side-menu" [routerLink]="['/projects']" [routerLinkActive]="['selected']" (click)="showMenu = !showMenu">Projects</div>
+	<div class="link side-menu" [routerLink]="['/login']" [routerLinkActive]="['selected']" (click)="showMenu = !showMenu">Login</div>
+	<div class="link side-menu close-menu" (click)="showMenu = !showMenu">Close</div>
+</div>
+<div class="page-wrap" [ngClass]="{'out' : showMenu}">
+	<menu-header (result)="ngOnChange($event)" [menuSelected]='showMenu'></menu-header>
+	
+	<div class="route-wrapper" [ngClass]="{'show-menu' : showMenu}">
+		<router-outlet></router-outlet>
 	</div>
-	<div class="page-wrap">
-		<menu-header (result)="ngOnChange($event)"></menu-header>
-		
-		<div class="route-wrapper" [ngClass]="{'show-menu' : showMenu}">
-			<router-outlet></router-outlet>
+	<!-- <div style="height: 60px"></div> -->
+	<footer>
+		<div class="section-container icon-container">
+			<a class="footer-block content-container link"></a>
+			<a target="_blank" href="https://github.com/LtSnuggie" class="link fa fa-github fa-2x icon-row content-container flex-right" aria-hidden="true"></a>
+			<a target="_blank" href="https://www.linkedin.com/in/andrew-lintereur-4b25521a" class="link fa fa-linkedin fa-2x icon-row content-container" aria-hidden="true"></a>
+			<a target="_blank" href="https://www.facebook.com/andrew.lintereur" class="link fa fa-facebook fa-2x icon-row content-container" aria-hidden="true"></a>
+			<a target="_blank" href="https://www.instagram.com/lt.snuggie/" class="link fa fa-instagram fa-2x icon-row content-container" aria-hidden="true"></a>
+			<span class="home-link flex-right"><a href="/#/home" class="link" >andrew-lintereur</a>.com © 2016</span>
 		</div>
-		<!-- <div style="height: 60px"></div> -->
-		<footer>
-			<div class="section-container icon-container">
-				<a class="footer-block content-container link"></a>
-				<a target="_blank" href="https://github.com/LtSnuggie" class="link fa fa-github fa-2x icon-row content-container flex-right" aria-hidden="true"></a>
-				<a target="_blank" href="https://www.linkedin.com/in/andrew-lintereur-4b25521a" class="link fa fa-linkedin fa-2x icon-row content-container" aria-hidden="true"></a>
-				<a target="_blank" href="https://www.facebook.com/andrew.lintereur" class="link fa fa-facebook fa-2x icon-row content-container" aria-hidden="true"></a>
-				<a target="_blank" href="https://www.instagram.com/lt.snuggie/" class="link fa fa-instagram fa-2x icon-row content-container" aria-hidden="true"></a>
-				<span class="home-link flex-right"><a href="/#/home" class="link" >andrew-lintereur</a>.com © 2016</span>
-			</div>
-		</footer>
-	</div>
+	</footer>
 </div>

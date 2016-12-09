@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, Output, Input} from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 
 @Component({
@@ -9,6 +9,7 @@ import {Observable} from 'rxjs/Rx';
 export class MenuHeader {
         
     @Output() result = new EventEmitter<boolean>();
+    @Input() menuSelected: boolean;
     
     menuSelected = false;
     menuClicked() {

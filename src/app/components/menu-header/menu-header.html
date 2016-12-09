@@ -1,6 +1,6 @@
 <div class="header">
 	<div class="section-container">
-		<div class="link content-container fa fa-bars fa-2x menu-bars" (click)='menuClicked()'></div>
+		<div class="link content-container fa fa-bars fa-2x menu-bars" (click)='menuClicked()' [ngClass]="{hide: menuSelected}"></div>
 		<div class="link content-container fa fa-home fa-2x" [routerLink]="['/home']" [routerLinkActive]="['selected']"></div>
 		<div class="link content-container fa fa-info-circle fa-2x" [routerLink]="['/bio']" [routerLinkActive]="['selected']"></div>
 		<div class="link content-container fa fa-code fa-2x" [routerLink]="['/projects']" [routerLinkActive]="['selected']"></div>

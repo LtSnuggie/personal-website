@@ -24,6 +24,9 @@
 .menu-bars{
 	margin-right: auto;
 }
+.hide {
+	visibility: hidden;
+}
 @media all and (max-width: 800px) {	
 	.link.menu-bars {
 		visibility: visible;

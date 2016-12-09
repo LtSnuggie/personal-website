@@ -191,6 +191,27 @@ footer {
 	color: #666;
 	cursor: pointer;
 }
+.link.side-menu {
+    height: 60px;
+    border-bottom: 1px solid #FFFFFF;
+    width: 200px;
+    color: #FFFFFF;
+    position: static;
+    background-color: #666;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.link.side-menu.selected {
+	background-color:  #df4244;
+	color: white;
+}
+.link.side-menu.close-menu {
+	margin-top: auto;
+	background-color: #df4244;
+	margin-top: calc(100vh - 299px);
+}
 .home-link {
 	width: 240px;
 	color: #666;
@@ -216,6 +237,29 @@ a.link:hover, a.link:focus{
 	flex-grow: 0;
 	padding: 0;
 	padding-top: 15px;
+}
+.page-wrap {	
+    transition: all .2s linear;
+    position: absolute;
+    width: 100vw;
+    left: 0px;
+}
+.page-wrap.out {
+	left: 200px;
+}
+.side-menu {
+	float: left;
+	flex-direction: column;
+	border-right: 1px solid #666;
+	height: 100vh;
+	width: 200px;
+	position: fixed;
+	left: -200px;
+	background: #F0F0F0;
+    transition: all .2s linear;
+}
+.side-menu.out {
+	left: 0;
 }
 @media all and (max-width: 800px) {
 	footer{
