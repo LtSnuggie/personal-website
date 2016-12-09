@@ -226,9 +226,6 @@ a.link:hover, a.link:focus{
 .footer-block.link.content-container {
 	z-index: -1;
 }
-.route-wrapper {
-	min-height: calc(100vh - 120px);
-}
 .content-container.link{
 	justify-content: center;
 /* 	color: white; */
@@ -246,6 +243,7 @@ a.link:hover, a.link:focus{
 }
 .page-wrap.out {
 	left: 200px;
+    position: fixed;
 }
 .side-menu {
 	float: left;
@@ -283,6 +281,9 @@ a.link:hover, a.link:focus{
 	img {
 		width: 95%;
 	}
+	.route-wrapper {
+		min-height: calc(100vh - 180px);
+	}
 }
 @media all and (min-width: 800px) {
 	footer{
@@ -298,5 +299,8 @@ a.link:hover, a.link:focus{
 	}
 	.footer {
 		height: 60px;	
+	}
+	.route-wrapper {
+		min-height: calc(100vh - 120px);
 	}
 }

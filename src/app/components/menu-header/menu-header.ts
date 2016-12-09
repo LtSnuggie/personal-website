@@ -11,7 +11,7 @@ export class MenuHeader {
     @Output() result = new EventEmitter<boolean>();
     @Input() menuSelected: boolean;
     
-    menuSelected = false;
+//    menuSelected = false;
     menuClicked() {
         this.menuSelected = !this.menuSelected;
         this.result.emit(this.menuSelected);
