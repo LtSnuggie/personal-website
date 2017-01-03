@@ -67,6 +67,17 @@
 	justify-content: center;
 	align-items: center;
 }
+.button.disabled {
+	background-color: red;
+	cursor: default;
+}
+.button.disabled:hover {
+	background-color: red;
+	border: 1px solid #FFF;
+}
+.disabled:focus {
+	outline: none;
+}
 /* Desktop */
 @media all and (min-width: 800px) {
 	.login-container {
@@ -85,6 +96,9 @@
 	.border-container {
 		border: 1px solid #BBB;
     	padding: 30px 80px 30px 30px;
+	}
+	.border-container.disabled {
+		border: 1px solid red;
 	}
 }
 /* Mobile */
@@ -108,6 +122,9 @@
 	.button {
 		margin-left: 20px;
 		margin-right: auto;
+	}
+	.forgot-password {
+		color : #df4244;
 	}
 }
 	

@@ -1,22 +1,24 @@
 <div class="section-container">
-	<div class="border-container">
-		<div class="login-container">
+	<div class="border-container" [ngClass]="{disabled: lockout}">
+		<form #f="ngForm" (ngSubmit)="login(f)" novalidate class="login-container">
 			<div class="window text">
 				Username<span class="seperator"> :</span>
 			</div>
 			<div class="window input">
-				<input type="text" class="login-input">
+				<input type="text" class="login-input" ngModel required name='username'>
 			</div>
 			<div class="window text">
 				Password<span class="seperator"> :</span>
 			</div>
 			<div class="window input">
-				<input type="password" class="login-input">
+				<input type="password" class="login-input" ngModel required name='password'>
 			</div>
 			<div class="window button-bar">
-				<a class="link italic">forgot password</a>
-				<div class="button">login</div>
+				<a class="link italic forgot-password">forgot password</a>
+				<button class="button" [ngClass]="{disabled: lockout}">login</button>
+<!-- 				<button class="button" (click)="login()">login</button> -->
 			</div>
-		</div>
+		</form>
 	</div>
+	{{username}}{{password}}
 </div>
